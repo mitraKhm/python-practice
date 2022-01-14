@@ -51,7 +51,7 @@ def handle_chld(sig, frame):
 	
 status, result = fillArray('config.ini', ['firstname','lastname'], {'midName':''})
 if not status:
-	print(result)
+	logger.info('result : {}'.format(result))
 	exit(1)
 res = result
 				
